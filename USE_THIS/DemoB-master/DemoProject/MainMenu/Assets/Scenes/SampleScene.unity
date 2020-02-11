@@ -2651,27 +2651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668c5c4bc3ad49f4e97a0c469fae5d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rootPanel: {fileID: 958041534}
-  _missionSelectPanel: {fileID: 1719127878}
-  _missionConfirmPanel: {fileID: 1069807483}
-  _missionConfirmPanel1: {fileID: 412504375}
-  _missionConfirmPanel2: {fileID: 362031763}
-  _missionConfirmPanel3: {fileID: 931954586}
-  _missionConfirmPanel4: {fileID: 618730128}
-  _missionConfirmPanel5: {fileID: 477396036}
-  _missionConfirmPanel6: {fileID: 862958115}
-  _missionConfirmPanel7: {fileID: 464778113}
-  _missionConfirmPanel9: {fileID: 0}
-  _dumbass: {fileID: 1625659856}
-  _falls1: {fileID: 868679265}
-  _falls2: {fileID: 1217275472}
-  _falls3: {fileID: 1274586864}
-  _falls4: {fileID: 1947711788}
-  _falls5: {fileID: 1947711788}
-  _falls6: {fileID: 1422040783}
-  _falls7: {fileID: 1694825144}
-  _falls8: {fileID: 1126338338}
-  _falls9: {fileID: 1625365757}
 --- !u!1 &535304926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5898,8 +5877,9 @@ GameObject:
   - component: {fileID: 951737161}
   - component: {fileID: 951737163}
   - component: {fileID: 951737162}
+  - component: {fileID: 951737164}
   m_Layer: 5
-  m_Name: EncounterBg_pnl
+  m_Name: Encounter_pnl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5965,6 +5945,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951737160}
   m_CullTransparentMesh: 0
+--- !u!114 &951737164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951737160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0410801e104be49ac5a1d1211f7f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _encounter: {fileID: 11400000, guid: 5205c86ba08c288499517be64df62120, type: 2}
+  _titleText: {fileID: 1377832999}
+  _descText: {fileID: 1731430509}
+  _choice1Text: {fileID: 856037989}
+  _choice1CostText: {fileID: 1255446623}
+  _choice2Text: {fileID: 1237749707}
+  _choice2CostText: {fileID: 1495218690}
+  _choice3Text: {fileID: 938212786}
+  _choice3CostText: {fileID: 786569601}
+  _choice4Text: {fileID: 8335413}
+  _choice4CostText: {fileID: 114863927}
 --- !u!1 &958041534
 GameObject:
   m_ObjectHideFlags: 0

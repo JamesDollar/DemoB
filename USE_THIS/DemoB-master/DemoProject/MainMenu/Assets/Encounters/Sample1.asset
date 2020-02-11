@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
+  m_Name: Sample1
+  m_EditorClassIdentifier: 
+  Title: Sample 1
+  Description: This is a sample description of the encouinter! It could be anything...
+  Choice1: Agg. Success
+  Choice1Cost: Guaranteed success, but with a cost...
+  Choice2: Agg. Chance
+  Choice2Cost: XX/-2 Gold
+  Choice3: Pass. Success
+  Choice3Cost: Guaranteed Success, but with a cost...
+  Choice4: Pass. Chance
+  Choice4Cost: X/-1 Rations
