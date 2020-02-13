@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/New Scene.unity
     guid: fe9d730260d3f5e40a1305ea95937fbd
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/fdgb.unity
