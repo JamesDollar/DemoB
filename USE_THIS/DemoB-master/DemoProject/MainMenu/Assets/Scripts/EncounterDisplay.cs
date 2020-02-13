@@ -39,6 +39,6 @@ public class EncounterDisplay : MonoBehaviour
 
         _choice4Text.text = _encounter.Choice4;
         _choice4CostText.text = _encounter.Choice4Cost;
-}
+    }
 
 }

@@ -8,10 +8,18 @@ public class PlayerData
     public int UIPanel;
     public int rations;
     public int morale;
-    public int gold;
-    public int cargo;
+    public int money;
     public int durability;
     public int ammo;
-
-    //Add constructor with object keeping track of variables as a parameter.
+    public int maxAmmo;
+    
+    public PlayerData()
+    {
+        rations = 10;
+        morale = 100;
+        money = 20;
+        durability = 5;
+        ammo = 1;
+        maxAmmo = 5;
+    }
 }
