@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Sample 1
   Description: This is a sample description of the encouinter! It could be anything...
-  Choice1: Agg. Success
-  Choice1Cost: Guaranteed success, but with a cost...
-  Choice2: Agg. Chance
-  Choice2Cost: XX/-2 Gold
-  Choice3: Pass. Success
-  Choice3Cost: Guaranteed Success, but with a cost...
-  Choice4: Pass. Chance
-  Choice4Cost: X/-1 Rations
+  Choice1: Aggressive
+  Choice1Cost: -10 Morale
+  Choice1Type: Morale
+  Choice1Amount: -10
+  Choice2: Passive
+  Choice2Cost: -2 Rations
+  Choice2Type: Rations
+  Choice2Amount: -2

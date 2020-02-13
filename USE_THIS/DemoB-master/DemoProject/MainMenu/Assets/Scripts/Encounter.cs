@@ -11,15 +11,13 @@ public class Encounter : ScriptableObject
 
     public string Choice1;
     public string Choice1Cost;
+    public string Choice1Type;
+    public int Choice1Amount;
 
     public string Choice2;
     public string Choice2Cost;
-
-    public string Choice3;
-    public string Choice3Cost;
-
-    public string Choice4;
-    public string Choice4Cost;
+    public string Choice2Type;
+    public int Choice2Amount;
 
     public void Print()
     {
