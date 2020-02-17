@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
+  m_Name: Encounter9
+  m_EditorClassIdentifier: 
+  Title: 
+  Description: "Your crew finds some people who\u2019ve just had their ship sunken.
+    You bring them onboard and back to the nearest island where they want to repay
+    you for your kindness."
+  Choice1: A party to celebrate a safe return
+  Choice1Cost: +15 Morale
+  Choice1Type: Morale
+  Choice1Amount: 15
+  Choice2: A reward
+  Choice2Cost: +10 Money
+  Choice2Type: Money
+  Choice2Amount: 10
