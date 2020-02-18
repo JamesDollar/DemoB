@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter3
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Kraken Encounter
   Description: The ferocious Kraken rises from the waters!
   Choice1: Fight the Kraken!
   Choice1Cost: -1 Durability

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter9
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Rescue Reward
   Description: "Your crew finds some people who\u2019ve just had their ship sunken.
     You bring them onboard and back to the nearest island where they want to repay
     you for your kindness."

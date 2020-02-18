@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter4
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Ship Stowaway
   Description: Your crew caught a stowaway on the ship! They seem to have wanted passage
     to the next island
   Choice1: Request Payment

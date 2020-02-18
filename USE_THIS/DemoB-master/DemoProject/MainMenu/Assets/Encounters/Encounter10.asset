@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter10
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Fishman Invitation
   Description: "You see a rare fishman waving to you. The ship stops by to meet this
     peculiar fellow where he offers you passage to a secret city if you\u2019re interested."
   Choice1: Refuse his offer

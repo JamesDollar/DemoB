@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter2
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Pirate Encounter
   Description: A pirate ship is headed towards your ship!
   Choice1: Fight off the Pirates!
   Choice1Cost: -1 Durability

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter7
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Whirlpool Monster
   Description: A massive sea monster is causing a whirlpool and dragging your vessel
     to it!
   Choice1: Ram the Beast

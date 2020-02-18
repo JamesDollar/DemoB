@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter8
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Stormy Waters
   Description: Your ship is caught in heavy waves, rocking the vessel back and forth.
     Heavy winds are blowing harshly and putting the ship at risk of damage.
   Choice1: Take the wheel and keep the ship steady
