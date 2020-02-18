@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter5
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Mysterious Music
   Description: The crew hears a beautiful melody somewhere near. They seem to want
     to find the source of the music.
   Choice1: Take the wheel and move the ship away from the source

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter1
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Reef Wreckage
   Description: 'The Ship has sailed into reefs! '
   Choice1: Move the ship off the reef by manpower
   Choice1Cost: -10 Rations

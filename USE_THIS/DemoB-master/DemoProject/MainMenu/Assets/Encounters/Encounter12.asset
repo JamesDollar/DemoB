@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter12
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Pirate Treasure
   Description: Your crew tell you that they spotted pirates burying treasure and leaving
     the spot.
   Choice1: Dig up the treasure before the pirates' return

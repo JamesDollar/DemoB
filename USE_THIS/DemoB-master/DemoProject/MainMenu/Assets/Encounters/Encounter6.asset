@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter6
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Rumored Treasure
   Description: The ship docks at an island where they hear a rumor of buried treasure.
     The crew seems to be excited by the prospect of finding it.
   Choice1: Search for the treasure

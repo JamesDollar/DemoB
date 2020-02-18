@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter11
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Fish Frenzy
   Description: Your ship passes by a fish frenzy near an underwater cavern. The crew
     gets out their fishing gear and are on standby to fish. Which fishing spot will
     you take the ship?
