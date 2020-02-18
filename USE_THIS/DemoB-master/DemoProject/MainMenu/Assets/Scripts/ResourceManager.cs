@@ -11,69 +11,86 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] int ammo = 1;
     [SerializeField] int maxAmmo = 5;
 
+    [SerializeField] ResourceManagerUI resourceManagerUI;
+
+    void Start()
+    {
+        SetRations(rations);
+        SetMorale(morale);
+        SetMoney(money);
+        SetDurability(durability);
+        SetAmmo(ammo);
+    }
+
     public void SetRations(int value)
     {
         rations = value;
+        resourceManagerUI.UpdateRations(rations);
     }
     public void IncreaseRations(int changeAmt)
     {
-        rations += changeAmt;
+        SetRations(rations + changeAmt);
+
     }
     public void DecreaseRations(int changeAmt)
     {
-        rations -= changeAmt;
+        SetRations(rations - changeAmt);
     }
 
     public void SetMorale(int value)
     {
         morale = value;
+        resourceManagerUI.UpdateMorale(morale);
     }
     public void IncreaseMorale(int changeAmt)
     {
-        morale += changeAmt;
+        SetMorale(morale + changeAmt);
     }
     public void DecreaseMorale(int changeAmt)
     {
-        morale -= changeAmt;
+        SetMorale(morale - changeAmt);
     }
 
     public void SetMoney(int value)
     {
         money = value;
+        resourceManagerUI.UpdateMoney(value);
     }
     public void IncreaseMoney(int changeAmt)
     {
-        money += changeAmt;
+        SetMoney(money + changeAmt);
     }
     public void DecreaseMoney(int changeAmt)
     {
-        money -= changeAmt;
+        SetMoney(money - changeAmt);
     }
 
     public void SetDurability(int value)
     {
         durability = value;
+        resourceManagerUI.UpdateDurability(value);
     }
     public void IncreaseDurability(int changeAmt)
     {
-        durability += changeAmt;
+        SetDurability(durability + changeAmt);
     }
     public void DecreaseDurability(int changeAmt)
     {
-        durability -= changeAmt;
+        SetDurability(durability - changeAmt);
     }
 
     public void SetAmmo(int value)
     {
-        ammo = value;
+        ammo = Mathf.Clamp(value, 0, maxAmmo);
+        resourceManagerUI.UpdateAmmo(ammo, maxAmmo);
     }
     public void IncreaseAmmo(int changeAmt)
     {
-        ammo += changeAmt;
+        SetAmmo(ammo + changeAmt);
     }
     public void DecreaseAmmo(int changeAmt)
     {
-        ammo -= changeAmt;
+        SetAmmo(ammo - changeAmt);
     }
 
     public void UpdateResources(string type, int amount)
