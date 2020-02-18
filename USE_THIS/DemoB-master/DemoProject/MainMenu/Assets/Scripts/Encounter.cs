@@ -18,10 +18,4 @@ public class Encounter : ScriptableObject
     public string Choice2Cost;
     public string Choice2Type;
     public int Choice2Amount;
-
-    public void Print()
-    {
-        Debug.Log(Title);
-        Debug.Log(Description);
-    }
 }

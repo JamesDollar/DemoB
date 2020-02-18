@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EncounterDisplay : MonoBehaviour
 {
+    [SerializeField] Encounter[] _encounters = new Encounter[0];
     public Encounter _encounter;
 
     public Text _titleText;
@@ -16,9 +17,9 @@ public class EncounterDisplay : MonoBehaviour
     public Text _choice2Text;
     public Text _choice2CostText;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
+        SetEncounter(_encounters[GenerateEncounter(1, 12)]);//generates a random encounter and sets it
         _titleText.text = _encounter.Title;
         _descText.text = _encounter.Description;
 
@@ -27,6 +28,19 @@ public class EncounterDisplay : MonoBehaviour
 
         _choice2Text.text = _encounter.Choice2;
         _choice2CostText.text = _encounter.Choice2Cost;
+    }
+
+    //sets the displayed encounter to the input encounter
+    public void SetEncounter(Encounter newEncounter){
+        Debug.Log("Setting new Encounter...");
+        _encounter = newEncounter;
+    }
+
+    //generate a random number
+    int GenerateEncounter(int min, int max)
+    {
+        Debug.Log("Generating number...");
+        return Random.Range(min, max);
     }
 
 }

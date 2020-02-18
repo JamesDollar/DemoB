@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,8 @@ GameObject:
   m_Component:
   - component: {fileID: 216080598}
   - component: {fileID: 216080597}
+  - component: {fileID: 216080599}
+  - component: {fileID: 216080600}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -146,9 +148,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 216080596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0fa9d17dfa849747afd47d17632137d, type: 3}
+  m_Script: {fileID: 11500000, guid: 489d7734ed0e84f4a8450e6906a96939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rations: 10
+  morale: 5
+  money: 20
+  durability: 100
+  ammo: 1
+  maxAmmo: 5
 --- !u!4 &216080598
 Transform:
   m_ObjectHideFlags: 0
@@ -163,6 +171,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &216080599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216080596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020a655c255e8674ab4a8cb8a2462c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _encounterInfo: {fileID: 951737160}
+--- !u!114 &216080600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216080596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df2ed5fc2feed94a83a09b0f28bdc26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rootPanel: {fileID: 0}
+  _AnimationPanel: {fileID: 0}
+  _ProblemChoices: {fileID: 0}
+  _ChoicesScreen: {fileID: 0}
+  _DaysRecap: {fileID: 0}
+  _AnimationPanelD2: {fileID: 0}
+  _ProblemChoicesD2: {fileID: 0}
+  _ChoicesD2: {fileID: 0}
+  _DaysRecapD2: {fileID: 0}
+  _AnimationPanelD3: {fileID: 0}
+  _ProblemChoicesD3: {fileID: 0}
+  _ChoicesD3: {fileID: 0}
+  _RecapD3: {fileID: 0}
+  _AnimationPanelD4: {fileID: 0}
+  _ProblemChoicesD4: {fileID: 0}
+  _ChoicesD4: {fileID: 0}
+  _RecapD4: {fileID: 0}
+  _RecapD41: {fileID: 0}
+  _AnimationPanelD5: {fileID: 0}
+  _ProblemChoicesD5: {fileID: 0}
+  _ChoicesD51: {fileID: 0}
+  _RecapD5: {fileID: 0}
+  _AnimationPanelD6: {fileID: 0}
+  _ProblemChoicesD6: {fileID: 0}
+  _ChoicesD6: {fileID: 0}
+  _RecapD6: {fileID: 0}
 --- !u!1 &381003157
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +303,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 381003160}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 216080599}
+        m_MethodName: Choice2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &381003160
@@ -367,12 +437,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 216080599}
+        m_MethodName: Choice1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -698,7 +768,7 @@ GameObject:
   - component: {fileID: 951737161}
   - component: {fileID: 951737163}
   - component: {fileID: 951737162}
-  - component: {fileID: 951737164}
+  - component: {fileID: 951737165}
   m_Layer: 5
   m_Name: Encounter_pnl
   m_TagString: Untagged
@@ -766,7 +836,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951737160}
   m_CullTransparentMesh: 0
---- !u!114 &951737164
+--- !u!114 &951737165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -778,17 +848,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f0410801e104be49ac5a1d1211f7f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _encounter: {fileID: 11400000, guid: 5205c86ba08c288499517be64df62120, type: 2}
+  _encounters:
+  - {fileID: 11400000, guid: 6801920b349a7cd4397cd9cce9c9eab0, type: 2}
+  - {fileID: 11400000, guid: 34d428e235143a240932560325edbd00, type: 2}
+  - {fileID: 11400000, guid: 91c565eeacafa584a89112f1c54da429, type: 2}
+  - {fileID: 11400000, guid: 7534c9e74f60bcc499cedcd76d367bc9, type: 2}
+  - {fileID: 11400000, guid: 0b37b6d37d69301479a452b1dcef8981, type: 2}
+  - {fileID: 11400000, guid: 6e6805ae94e5dfb4986d4741fa20059b, type: 2}
+  - {fileID: 11400000, guid: 736c451575accbe4badc6e77d10ba86f, type: 2}
+  - {fileID: 11400000, guid: 38f6f0be40f1dc14ba72991d2edc084a, type: 2}
+  - {fileID: 11400000, guid: 0284ad8f4f81af44e8e6ce3e6325b246, type: 2}
+  - {fileID: 11400000, guid: 4d1eda0a47e74aa41a4f6b9dc0ec2e5d, type: 2}
+  - {fileID: 11400000, guid: 6331870b76c2e9345ba49293d851f5c6, type: 2}
+  - {fileID: 11400000, guid: 46add09b5656b0d4c913d668638c0fe5, type: 2}
+  _encounter: {fileID: 0}
   _titleText: {fileID: 1377832999}
   _descText: {fileID: 1731430509}
   _choice1Text: {fileID: 856037989}
   _choice1CostText: {fileID: 1255446623}
   _choice2Text: {fileID: 1237749707}
   _choice2CostText: {fileID: 1495218690}
-  _choice3Text: {fileID: 0}
-  _choice3CostText: {fileID: 0}
-  _choice4Text: {fileID: 0}
-  _choice4CostText: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

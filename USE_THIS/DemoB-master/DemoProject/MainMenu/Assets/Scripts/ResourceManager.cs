@@ -30,11 +30,11 @@ public class ResourceManager : MonoBehaviour
     }
     public void IncreaseMorale(int changeAmt)
     {
-        rations += changeAmt;
+        morale += changeAmt;
     }
     public void DecreaseMorale(int changeAmt)
     {
-        rations -= changeAmt;
+        morale -= changeAmt;
     }
 
     public void SetMoney(int value)
@@ -74,5 +74,33 @@ public class ResourceManager : MonoBehaviour
     public void DecreaseAmmo(int changeAmt)
     {
         ammo -= changeAmt;
+    }
+
+    public void UpdateResources(string type, int amount)
+    {
+        type = type.ToLower(); //sets string to all lowercase
+        switch (type) { //searches for type of resource being changed, and then changes it
+            case "money":
+                IncreaseMoney(amount);
+                Debug.Log("Money is now " + money);
+                break;
+            case "morale":
+                IncreaseMorale(amount);
+                Debug.Log("Morale is now " + morale);
+                break;
+            case "rations":
+                IncreaseRations(amount);
+                Debug.Log("Rations are now " + rations);
+                break;
+            case "ammo":
+                IncreaseAmmo(amount);
+                Debug.Log("Ammo is now " + ammo);
+                break;
+            case "durability":
+                IncreaseDurability(amount);
+                Debug.Log("Durability is now " + durability);
+                break;
+            
+        }
     }
 }
