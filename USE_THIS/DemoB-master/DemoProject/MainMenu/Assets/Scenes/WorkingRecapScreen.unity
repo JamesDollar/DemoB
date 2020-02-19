@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Proceed To Day 2
+  m_Text: 'Proceed To Next Day '
 --- !u!222 &54881773
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1126,12 +1126,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695700111}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f0410801e104be49ac5a1d1211f7f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _encounters: []
+  _encounters:
+  - {fileID: 11400000, guid: 6801920b349a7cd4397cd9cce9c9eab0, type: 2}
+  - {fileID: 11400000, guid: 34d428e235143a240932560325edbd00, type: 2}
+  - {fileID: 11400000, guid: 91c565eeacafa584a89112f1c54da429, type: 2}
+  - {fileID: 11400000, guid: 7534c9e74f60bcc499cedcd76d367bc9, type: 2}
+  - {fileID: 11400000, guid: 0b37b6d37d69301479a452b1dcef8981, type: 2}
+  - {fileID: 11400000, guid: 6e6805ae94e5dfb4986d4741fa20059b, type: 2}
+  - {fileID: 11400000, guid: 736c451575accbe4badc6e77d10ba86f, type: 2}
+  - {fileID: 11400000, guid: 38f6f0be40f1dc14ba72991d2edc084a, type: 2}
+  - {fileID: 11400000, guid: 0284ad8f4f81af44e8e6ce3e6325b246, type: 2}
+  - {fileID: 11400000, guid: 4d1eda0a47e74aa41a4f6b9dc0ec2e5d, type: 2}
+  - {fileID: 11400000, guid: 6331870b76c2e9345ba49293d851f5c6, type: 2}
+  - {fileID: 11400000, guid: 46add09b5656b0d4c913d668638c0fe5, type: 2}
   _encounter: {fileID: 11400000, guid: 5205c86ba08c288499517be64df62120, type: 2}
   _titleText: {fileID: 1384708784}
   _descText: {fileID: 1495008420}
@@ -1832,7 +1844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1606975527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,7 +2124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1764058043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2308,7 +2320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Proceed To Day 2
+  m_Text: Proceed To Next Day
 --- !u!222 &1873173712
 CanvasRenderer:
   m_ObjectHideFlags: 0
