@@ -33,6 +33,6 @@ public class ResourceManagerUI : MonoBehaviour
 
     public void UpdateAmmo(int ammo, int maxAmmo)
     {
-        ammoTxt.text = "" + ammo + "/" + maxAmmo;
+        ammoTxt.text = "" + ammo + " / " + maxAmmo;
     }
 }

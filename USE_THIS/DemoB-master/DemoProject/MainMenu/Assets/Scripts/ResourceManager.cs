@@ -117,7 +117,6 @@ public class ResourceManager : MonoBehaviour
                 IncreaseDurability(amount);
                 Debug.Log("Durability is now " + durability);
                 break;
-            
         }
     }
 }
