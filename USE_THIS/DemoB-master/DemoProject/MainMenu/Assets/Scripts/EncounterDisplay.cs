@@ -20,6 +20,7 @@ public class EncounterDisplay : MonoBehaviour
     void OnEnable()
     {
         SetEncounter(_encounters[GenerateEncounter(1, 12)]);//generates a random encounter and sets it
+        //fills in scriptable object
         _titleText.text = _encounter.Title;
         _descText.text = _encounter.Description;
 
