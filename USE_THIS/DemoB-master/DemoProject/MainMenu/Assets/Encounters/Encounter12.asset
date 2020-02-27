@@ -18,8 +18,10 @@ MonoBehaviour:
   Choice1: Rob them of their riches
   Choice1Cost: +10 Money
   Choice1Type: Money
-  Choice1Amount: 20
+  Choice1Amount: 10
   Choice2: Steal their ammunition
   Choice2Cost: +1 Ammo
   Choice2Type: Ammo
   Choice2Amount: 1
+  RecapA: +10 Money
+  RecapB: +1 Ammo

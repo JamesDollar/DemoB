@@ -23,3 +23,5 @@ MonoBehaviour:
   Choice2Cost: -1 Durability
   Choice2Type: Durability
   Choice2Amount: -1
+  RecapA: -5 Morale
+  RecapB: -1 Durablity

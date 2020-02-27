@@ -24,3 +24,5 @@ MonoBehaviour:
   Choice2Cost: +15 Money
   Choice2Type: Money
   Choice2Amount: 15
+  RecapA: +10 Rations
+  RecapB: +15 Money

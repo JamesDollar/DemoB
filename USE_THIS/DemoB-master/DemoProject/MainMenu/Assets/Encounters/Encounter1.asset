@@ -15,10 +15,12 @@ MonoBehaviour:
   Title: Reef Wreckage
   Description: 'The Ship has sailed into reefs! '
   Choice1: Move the ship off the reef by manpower
-  Choice1Cost: -10 Rations
-  Choice1Type: Rations
-  Choice1Amount: -10
+  Choice1Cost: -1 Ration
+  Choice1Type: Ration
+  Choice1Amount: -1
   Choice2: Continue forward and force the ship off the reef
   Choice2Cost: -1 Durability
   Choice2Type: Durability
   Choice2Amount: -1
+  RecapA: -1 Ration
+  RecapB: -1 Durability

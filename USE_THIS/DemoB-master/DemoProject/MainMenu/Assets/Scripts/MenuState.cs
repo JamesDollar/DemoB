@@ -5,6 +5,7 @@ using UnityEngine;
 public enum MenuState
 {
    None = 0,
+  
    Root,
    ChoiceA,
    ChoiceB

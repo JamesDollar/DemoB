@@ -23,3 +23,5 @@ MonoBehaviour:
   Choice2Cost: -1 Ammo
   Choice2Type: Ammo
   Choice2Amount: -1
+  RecapA: -1 Durability
+  RecapB: -1 Ammo

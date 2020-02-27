@@ -24,3 +24,5 @@ MonoBehaviour:
   Choice2Cost: -25 Morale
   Choice2Type: Morale
   Choice2Amount: -25
+  RecapA: -20 Money
+  RecapB: -25 Morale

@@ -8,7 +8,7 @@ public class MainMenuUIController : MonoBehaviour
     [SerializeField] GameObject _rootPanel = null;
     [SerializeField] GameObject _two = null;
     [SerializeField] GameObject _ChoiceB = null;
-
+    [SerializeField] GameObject _ActualRoot = null;
 
     void OnEnable()
     {
@@ -27,11 +27,18 @@ public class MainMenuUIController : MonoBehaviour
 
         switch (newState)
         {
+            //case MenuState.ActualRoot:
+               //_ActualRoot.gameObject.SetActive(true);
+               // _ChoiceB.gameObject.SetActive(false);
+                //_rootPanel.gameObject.SetActive(false);
+                //_two.gameObject.SetActive(false);
+                //break;
             case MenuState.Root:
                 _rootPanel.gameObject.SetActive(true);
-
+                _ActualRoot.gameObject.SetActive(false);
                 break;
             case MenuState.ChoiceA:
+                _ActualRoot.gameObject.SetActive(false);
                 _two.gameObject.SetActive(true);
                 _rootPanel.gameObject.SetActive(false);
 
@@ -40,6 +47,7 @@ public class MainMenuUIController : MonoBehaviour
                 _ChoiceB.gameObject.SetActive(true);
                 _rootPanel.gameObject.SetActive(false);
                 _two.gameObject.SetActive(false);
+                _ActualRoot.gameObject.SetActive(false);
 
                 break;
 
@@ -61,7 +69,7 @@ public class MainMenuUIController : MonoBehaviour
                 // break;
                 //case MenuState.MissionConfirm9:
                 //_missionConfirmPanel8.gameObject.SetActive(true);
-                //_dumbass.gameObject.SetActive(true);
+               
                 //_falls8.gameObject.SetActive(true);
                 // SceneManager.LoadScene(0);
                 // break;
