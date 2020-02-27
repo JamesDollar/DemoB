@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
-  m_Name: Encounter2
+  m_Name: Encounter14
   m_EditorClassIdentifier: 
-  Title: Pirate Encounter
-  Description: A pirate ship is headed towards your ship!
-  Choice1: Fight off the Pirates!
-  Choice1Cost: -1 Durability
-  Choice1Type: Durability
-  Choice1Amount: -1
-  Choice2: Fire the Mortar!
-  Choice2Cost: -1 Ammo
-  Choice2Type: Ammo
-  Choice2Amount: -1
+  Title: 
+  Description: The weather grows cold and the crew are freezing from the chilly winds.
+  Choice1: Tough out the weather
+  Choice1Cost: -15 Morale
+  Choice1Type: Morale
+  Choice1Amount: -15
+  Choice2: Provide extra provisions
+  Choice2Cost: -10 Rations
+  Choice2Type: Rations
+  Choice2Amount: -10

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Encounter5
   m_EditorClassIdentifier: 
   Title: Mysterious Music
-  Description: The crew hears a beautiful melody somewhere near. They seem to want
-    to find the source of the music.
+  Description: The crew hears a beautiful melody somewhere near. You realize these
+    were the songs of a siren leading the ship astray!
   Choice1: Take the wheel and move the ship away from the source
   Choice1Cost: -5 Morale
   Choice1Type: Morale

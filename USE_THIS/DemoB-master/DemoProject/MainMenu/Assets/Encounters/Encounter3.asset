@@ -18,7 +18,7 @@ MonoBehaviour:
   Choice1Cost: -1 Durability
   Choice1Type: Durability
   Choice1Amount: -1
-  Choice2: Lure it away with bait
-  Choice2Cost: -5 Rations
-  Choice2Type: Rations
-  Choice2Amount: -5
+  Choice2: Fire the Mortar!
+  Choice2Cost: -1 Ammo
+  Choice2Type: Ammo
+  Choice2Amount: -1

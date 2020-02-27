@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter12
   m_EditorClassIdentifier: 
-  Title: Pirate Treasure
-  Description: Your crew tell you that they spotted pirates burying treasure and leaving
-    the spot.
-  Choice1: Dig up the treasure before the pirates' return
-  Choice1Cost: +20 Money
+  Title: Pirate Plundering
+  Description: Your crew tell you that they spotted pirates leaving their ship. It's
+    completely open to plunder.
+  Choice1: Rob them of their riches
+  Choice1Cost: +10 Money
   Choice1Type: Money
   Choice1Amount: 20
-  Choice2: Leave it be
-  Choice2Cost: -5 Morale
-  Choice2Type: Morale
-  Choice2Amount: -5
+  Choice2: Steal their ammunition
+  Choice2Cost: +1 Ammo
+  Choice2Type: Ammo
+  Choice2Amount: 1
