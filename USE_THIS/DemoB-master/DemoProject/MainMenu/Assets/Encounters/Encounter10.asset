@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter10
   m_EditorClassIdentifier: 
-  Title: Fishman Invitation
-  Description: "You see a rare fishman waving to you. The ship stops by to meet this
-    peculiar fellow where he offers you passage to a secret city if you\u2019re interested."
-  Choice1: Refuse his offer
-  Choice1Cost: -15 Morale
-  Choice1Type: Morale
-  Choice1Amount: -15
-  Choice2: Go along with it
-  Choice2Cost: +20 Morale
-  Choice2Type: Morale
-  Choice2Amount: 20
+  Title: Fishman Raiders
+  Description: Fishmen raiders are swimming up to your ship with tridents raised in
+    their hands!
+  Choice1: Fight on deck
+  Choice1Cost: -1 Durability
+  Choice1Type: Durability
+  Choice1Amount: -1
+  Choice2: Fire the Mortar
+  Choice2Cost: -1 Ammo
+  Choice2Type: Ammo
+  Choice2Amount: -1
+  RecapA: -1 Durability
+  RecapB: -1 Ammo

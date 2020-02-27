@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
-  m_Name: Encounter7
+  m_Name: Encounter14
   m_EditorClassIdentifier: 
-  Title: Whirlpool Monster
-  Description: A massive sea monster is causing a whirlpool and dragging your vessel
-    to it!
-  Choice1: Ram the Beast
-  Choice1Cost: -1 Durability
-  Choice1Type: Durability
-  Choice1Amount: -1
-  Choice2: Lure it away with bait
+  Title: 
+  Description: The weather grows cold and the crew are freezing from the chilly winds.
+  Choice1: Tough out the weather
+  Choice1Cost: -15 Morale
+  Choice1Type: Morale
+  Choice1Amount: -15
+  Choice2: Provide extra provisions
   Choice2Cost: -10 Rations
   Choice2Type: Rations
   Choice2Amount: -10
-  RecapA: -1 Durability
+  RecapA: -15 Morale
   RecapB: -10 Rations

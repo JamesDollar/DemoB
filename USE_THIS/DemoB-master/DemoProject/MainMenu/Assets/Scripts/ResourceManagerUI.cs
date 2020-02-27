@@ -11,28 +11,80 @@ public class ResourceManagerUI : MonoBehaviour
     [SerializeField] Text durabilityTxt;
     [SerializeField] Text ammoTxt;
 
-    public void UpdateRations(int rations)
+    FloatingTextController floatingTextController;
+
+    void Awake()
+    {
+        floatingTextController = GameObject.Find("FloatingTextController").GetComponent<FloatingTextController>();
+    }
+
+    public void UpdateRations(int rations, int changeAmt)
     {
         rationTxt.text = "" + rations;
+
+        if (changeAmt > 0)
+        {
+            floatingTextController.CreateFloatingText("+" + changeAmt, rationTxt.rectTransform);
+        }
+        else if (changeAmt < 0)
+        {
+            floatingTextController.CreateFloatingText("" + changeAmt, rationTxt.rectTransform);
+        }
     }
 
-    public void UpdateMorale(int morale)
+    public void UpdateMorale(int morale, int changeAmt)
     {
         moraleTxt.text = "" + morale;
+
+        if (changeAmt > 0)
+        {
+            floatingTextController.CreateFloatingText("+" + changeAmt, moraleTxt.rectTransform);
+        }
+        else if (changeAmt < 0)
+        {
+            floatingTextController.CreateFloatingText("" + changeAmt, moraleTxt.rectTransform);
+        }
     }
 
-    public void UpdateMoney(int money)
+    public void UpdateMoney(int money, int changeAmt)
     {
         moneyTxt.text = "$" + money;
+
+        if (changeAmt > 0)
+        {
+            floatingTextController.CreateFloatingText("+" + changeAmt, moneyTxt.rectTransform);
+        }
+        else if (changeAmt < 0)
+        {
+            floatingTextController.CreateFloatingText("" + changeAmt, moneyTxt.rectTransform);
+        }
     }
 
-    public void UpdateDurability(int durability)
+    public void UpdateDurability(int durability, int changeAmt)
     {
         durabilityTxt.text = "" + durability;
+
+        if (changeAmt > 0)
+        {
+            floatingTextController.CreateFloatingText("+" + changeAmt, durabilityTxt.rectTransform);
+        }
+        else if (changeAmt < 0)
+        {
+            floatingTextController.CreateFloatingText("" + changeAmt, durabilityTxt.rectTransform);
+        }
     }
 
-    public void UpdateAmmo(int ammo, int maxAmmo)
+    public void UpdateAmmo(int ammo, int maxAmmo, int changeAmt)
     {
-        ammoTxt.text = "" + ammo + "/" + maxAmmo;
+        ammoTxt.text = "" + ammo + " / " + maxAmmo;
+
+        if (changeAmt > 0)
+        {
+            floatingTextController.CreateFloatingText("+" + changeAmt, ammoTxt.rectTransform);
+        }
+        else if (changeAmt < 0)
+        {
+            floatingTextController.CreateFloatingText("" + changeAmt, ammoTxt.rectTransform);
+        }
     }
 }

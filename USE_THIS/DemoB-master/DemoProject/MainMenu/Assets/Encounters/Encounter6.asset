@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter6
   m_EditorClassIdentifier: 
-  Title: Rumored Treasure
-  Description: The ship docks at an island where they hear a rumor of buried treasure.
-    The crew seems to be excited by the prospect of finding it.
-  Choice1: Search for the treasure
+  Title: Treasured Moment
+  Description: Your crew found a buried artifact on an island. The inhabitants have
+    apparently been searching for it and want to reward you for finding it!
+  Choice1: Request Money
   Choice1Cost: +10 Money
   Choice1Type: Money
   Choice1Amount: 10
-  Choice2: Ignore the rumors
-  Choice2Cost: -5 Morale
+  Choice2: Celebrate
+  Choice2Cost: +10 Morale
   Choice2Type: Morale
-  Choice2Amount: -5
+  Choice2Amount: 10
+  RecapA: +10 Money
+  RecapB: +10 Morale

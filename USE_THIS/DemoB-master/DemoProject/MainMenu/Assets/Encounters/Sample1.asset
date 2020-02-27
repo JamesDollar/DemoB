@@ -22,3 +22,5 @@ MonoBehaviour:
   Choice2Cost: -2 Rations
   Choice2Type: Rations
   Choice2Amount: -2
+  RecapA: -10 Morale
+  RecapB: -2 Rations

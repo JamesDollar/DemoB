@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
   m_Name: Encounter11
   m_EditorClassIdentifier: 
-  Title: Fish Frenzy
-  Description: Your ship passes by a fish frenzy near an underwater cavern. The crew
-    gets out their fishing gear and are on standby to fish. Which fishing spot will
-    you take the ship?
-  Choice1: Outside of the Cavern
+  Title: Wave of Opportunity
+  Description: You come across a coast full of fish and rare pearls. The waves seem
+    to be pushing both of them from sight, so there's only enough time to acquire
+    one of them
+  Choice1: Begin Fishing
   Choice1Cost: +10 Rations
   Choice1Type: Rations
   Choice1Amount: 10
-  Choice2: Near the Cavern
-  Choice2Cost: +20 Rations
-  Choice2Type: Rations
-  Choice2Amount: 20
+  Choice2: Acquire Pearls
+  Choice2Cost: +15 Money
+  Choice2Type: Money
+  Choice2Amount: 15
+  RecapA: +10 Rations
+  RecapB: +15 Money

@@ -24,13 +24,14 @@ public class ResourceManager : MonoBehaviour
 
     public void SetRations(int value)
     {
+        int changeAmt = value - rations;
+
         rations = value;
-        resourceManagerUI.UpdateRations(rations);
+        resourceManagerUI.UpdateRations(rations, changeAmt);
     }
     public void IncreaseRations(int changeAmt)
     {
         SetRations(rations + changeAmt);
-
     }
     public void DecreaseRations(int changeAmt)
     {
@@ -39,8 +40,10 @@ public class ResourceManager : MonoBehaviour
 
     public void SetMorale(int value)
     {
+        int changeAmt = value - morale ;
+
         morale = value;
-        resourceManagerUI.UpdateMorale(morale);
+        resourceManagerUI.UpdateMorale(morale, changeAmt);
     }
     public void IncreaseMorale(int changeAmt)
     {
@@ -53,8 +56,10 @@ public class ResourceManager : MonoBehaviour
 
     public void SetMoney(int value)
     {
+        int changeAmt = value - money;
+
         money = value;
-        resourceManagerUI.UpdateMoney(value);
+        resourceManagerUI.UpdateMoney(value, changeAmt);
     }
     public void IncreaseMoney(int changeAmt)
     {
@@ -67,8 +72,10 @@ public class ResourceManager : MonoBehaviour
 
     public void SetDurability(int value)
     {
+        int changeAmt = value - durability;
+
         durability = value;
-        resourceManagerUI.UpdateDurability(value);
+        resourceManagerUI.UpdateDurability(value, changeAmt);
     }
     public void IncreaseDurability(int changeAmt)
     {
@@ -81,8 +88,12 @@ public class ResourceManager : MonoBehaviour
 
     public void SetAmmo(int value)
     {
-        ammo = Mathf.Clamp(value, 0, maxAmmo);
-        resourceManagerUI.UpdateAmmo(ammo, maxAmmo);
+        value = Mathf.Clamp(value, 0, 5);
+
+        int changeAmt = value - ammo;
+
+        ammo = value;
+        resourceManagerUI.UpdateAmmo(ammo, maxAmmo, changeAmt);
     }
     public void IncreaseAmmo(int changeAmt)
     {
@@ -117,7 +128,6 @@ public class ResourceManager : MonoBehaviour
                 IncreaseDurability(amount);
                 Debug.Log("Durability is now " + durability);
                 break;
-            
         }
     }
 }

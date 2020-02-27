@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa844c06b8853e64bb2b58f617b62706, type: 3}
+  m_Name: Encounter13
+  m_EditorClassIdentifier: 
+  Title: Against the Code
+  Description: One of your crewmates had stolen from the treasure room. They were
+    planning to jump ship and procured the money to make sure they can start a new
+    life.
+  Choice1: Let them take the money and start anew
+  Choice1Cost: -20 Money
+  Choice1Type: Money
+  Choice1Amount: -20
+  Choice2: Have them walk the plank
+  Choice2Cost: -25 Morale
+  Choice2Type: Morale
+  Choice2Amount: -25
+  RecapA: -20 Money
+  RecapB: -25 Morale

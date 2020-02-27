@@ -18,4 +18,13 @@ public class Encounter : ScriptableObject
     public string Choice2Cost;
     public string Choice2Type;
     public int Choice2Amount;
+
+    public string RecapA;//A
+    public string RecapB;//A
+
+    //public string DuraText;
+    //public string AmmoText;
+    //public string RationsText;
+   // public string MoneyText;
+    //public string MoraleText;
 }

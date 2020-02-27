@@ -23,3 +23,5 @@ MonoBehaviour:
   Choice2Cost: +10 Morale
   Choice2Type: Morale
   Choice2Amount: 10
+  RecapA: +10 Money
+  RecapB: +10 Morale
