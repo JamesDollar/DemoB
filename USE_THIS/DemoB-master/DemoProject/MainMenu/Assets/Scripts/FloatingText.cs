@@ -6,15 +6,20 @@ using UnityEngine.UI;
 public class FloatingText : MonoBehaviour
 {
     [SerializeField] Text floatingText;
+    [SerializeField] float floatSpeed = 1f;
+    [SerializeField] float duration = 1.5f;
+
+    [HideInInspector] public Color color;
 
     void Awake()
     {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, duration);
     }
 
     private void Update()
     {
-        Vector3 newPosition = transform.position + new Vector3(0, 0.5f, 0);
+        floatingText.color = color;
+        Vector3 newPosition = transform.position + new Vector3(0, floatSpeed, 0);
         transform.position = newPosition;
     }
 

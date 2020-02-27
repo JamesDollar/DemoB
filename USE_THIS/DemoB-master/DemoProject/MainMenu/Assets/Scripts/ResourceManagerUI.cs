@@ -11,6 +11,9 @@ public class ResourceManagerUI : MonoBehaviour
     [SerializeField] Text durabilityTxt;
     [SerializeField] Text ammoTxt;
 
+    [SerializeField] Color positiveColor;
+    [SerializeField] Color negativeColor;
+
     FloatingTextController floatingTextController;
 
     void Awake()
@@ -24,10 +27,12 @@ public class ResourceManagerUI : MonoBehaviour
 
         if (changeAmt > 0)
         {
+            floatingTextController.color = positiveColor;
             floatingTextController.CreateFloatingText("+" + changeAmt, rationTxt.rectTransform);
         }
         else if (changeAmt < 0)
         {
+            floatingTextController.color = negativeColor;
             floatingTextController.CreateFloatingText("" + changeAmt, rationTxt.rectTransform);
         }
     }
@@ -38,10 +43,12 @@ public class ResourceManagerUI : MonoBehaviour
 
         if (changeAmt > 0)
         {
+            floatingTextController.color = positiveColor;
             floatingTextController.CreateFloatingText("+" + changeAmt, moraleTxt.rectTransform);
         }
         else if (changeAmt < 0)
         {
+            floatingTextController.color = negativeColor;
             floatingTextController.CreateFloatingText("" + changeAmt, moraleTxt.rectTransform);
         }
     }
@@ -52,10 +59,12 @@ public class ResourceManagerUI : MonoBehaviour
 
         if (changeAmt > 0)
         {
+            floatingTextController.color = positiveColor;
             floatingTextController.CreateFloatingText("+" + changeAmt, moneyTxt.rectTransform);
         }
         else if (changeAmt < 0)
         {
+            floatingTextController.color = negativeColor;
             floatingTextController.CreateFloatingText("" + changeAmt, moneyTxt.rectTransform);
         }
     }
@@ -66,10 +75,12 @@ public class ResourceManagerUI : MonoBehaviour
 
         if (changeAmt > 0)
         {
+            floatingTextController.color = positiveColor;
             floatingTextController.CreateFloatingText("+" + changeAmt, durabilityTxt.rectTransform);
         }
         else if (changeAmt < 0)
         {
+            floatingTextController.color = negativeColor;
             floatingTextController.CreateFloatingText("" + changeAmt, durabilityTxt.rectTransform);
         }
     }
@@ -80,10 +91,12 @@ public class ResourceManagerUI : MonoBehaviour
 
         if (changeAmt > 0)
         {
+            floatingTextController.color = positiveColor;
             floatingTextController.CreateFloatingText("+" + changeAmt, ammoTxt.rectTransform);
         }
         else if (changeAmt < 0)
         {
+            floatingTextController.color = negativeColor;
             floatingTextController.CreateFloatingText("" + changeAmt, ammoTxt.rectTransform);
         }
     }
