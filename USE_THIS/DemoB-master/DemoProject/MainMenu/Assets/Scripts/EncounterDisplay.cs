@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EncounterDisplay : MonoBehaviour
 {
     [SerializeField] Encounter[] _encounters = new Encounter[0];
+    [SerializeField] EncounterResourceInterface _encounterResourceInterface;
     public Encounter _encounter;
 
     public Text _titleText;
@@ -50,18 +51,13 @@ public class EncounterDisplay : MonoBehaviour
 
         RecapA.text = _encounter.RecapA.ToString();//c
         RecapB.text = _encounter.RecapB.ToString();//c
-
-        //DuraText.text = _encounter.DuraText.ToString();
-        //AmmoText.text = _encounter.AmmoText.ToString();
-        //RationsText.text = _encounter.RationsText.ToString();
-        //MoneyText.text = _encounter.RationsText.ToString();
-        //MoraleText.text = _encounter.MoraleText.ToString();
     }
 
     //sets the displayed encounter to the input encounter
     public void SetEncounter(Encounter newEncounter){
         Debug.Log("Setting new Encounter...");
         _encounter = newEncounter;
+        _encounterResourceInterface.SetEncounter();
     }
 
     //generate a random number

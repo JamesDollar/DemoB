@@ -51,4 +51,9 @@ public class EncounterResourceInterface : MonoBehaviour
         _resourceManager.UpdateResources(Choice2Type, Choice2Amount);
         _choice2RecapText.text = Choice2Cost;
     }
+
+    public void SetEncounter()
+    {
+        _encounter = _encounterInfo.GetComponent<EncounterDisplay>()._encounter;
+    }
 }

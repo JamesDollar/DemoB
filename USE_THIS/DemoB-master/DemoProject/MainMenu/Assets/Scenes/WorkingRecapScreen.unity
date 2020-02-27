@@ -2602,6 +2602,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4d1eda0a47e74aa41a4f6b9dc0ec2e5d, type: 2}
   - {fileID: 11400000, guid: 6331870b76c2e9345ba49293d851f5c6, type: 2}
   - {fileID: 11400000, guid: 46add09b5656b0d4c913d668638c0fe5, type: 2}
+  _encounterResourceInterface: {fileID: 1790349428}
   _encounter: {fileID: 11400000, guid: 5205c86ba08c288499517be64df62120, type: 2}
   _titleText: {fileID: 1384708784}
   _descText: {fileID: 1495008420}
@@ -2613,7 +2614,7 @@ MonoBehaviour:
   ArecapScreenText: {fileID: 2077880901}
   RecapB: {fileID: 2113650451}
   _BrecapScreenText: {fileID: 2113650451}
-  DuraText: {fileID: 2094463648}
+  DuraText: {fileID: 0}
   AmmoText: {fileID: 0}
   RationsText: {fileID: 0}
   MoneyText: {fileID: 0}
@@ -4444,8 +4445,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _encounterInfo: {fileID: 695700111}
-  _choice1RecapText: {fileID: 0}
-  _choice2RecapText: {fileID: 0}
+  _choice1RecapText: {fileID: 1679362174}
+  _choice2RecapText: {fileID: 20359812}
 --- !u!1 &1817843753
 GameObject:
   m_ObjectHideFlags: 0
