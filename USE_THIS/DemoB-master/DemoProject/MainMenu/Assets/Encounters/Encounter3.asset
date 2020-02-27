@@ -16,7 +16,7 @@ MonoBehaviour:
   Description: The ferocious Kraken rises from the waters!
   Choice1: Fight the Kraken!
   Choice1Cost: -1 Durability
-  Choice1Type: Durability`
+  Choice1Type: Durability
   Choice1Amount: -1
   Choice2: Lure it away with bait
   Choice2Cost: -5 Rations
