@@ -264,6 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _encounterInfo: {fileID: 951737160}
+  _choice1RecapText: {fileID: 0}
+  _choice2RecapText: {fileID: 0}
 --- !u!114 &216080600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,31 +279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rootPanel: {fileID: 0}
-  _AnimationPanel: {fileID: 0}
-  _ProblemChoices: {fileID: 0}
-  _ChoicesScreen: {fileID: 0}
-  _DaysRecap: {fileID: 0}
-  _AnimationPanelD2: {fileID: 0}
-  _ProblemChoicesD2: {fileID: 0}
-  _ChoicesD2: {fileID: 0}
-  _DaysRecapD2: {fileID: 0}
-  _AnimationPanelD3: {fileID: 0}
-  _ProblemChoicesD3: {fileID: 0}
-  _ChoicesD3: {fileID: 0}
-  _RecapD3: {fileID: 0}
-  _AnimationPanelD4: {fileID: 0}
-  _ProblemChoicesD4: {fileID: 0}
-  _ChoicesD4: {fileID: 0}
-  _RecapD4: {fileID: 0}
-  _RecapD41: {fileID: 0}
-  _AnimationPanelD5: {fileID: 0}
-  _ProblemChoicesD5: {fileID: 0}
-  _ChoicesD51: {fileID: 0}
-  _RecapD5: {fileID: 0}
-  _AnimationPanelD6: {fileID: 0}
-  _ProblemChoicesD6: {fileID: 0}
-  _ChoicesD6: {fileID: 0}
-  _RecapD6: {fileID: 0}
+  _two: {fileID: 0}
+  _ChoiceB: {fileID: 0}
+  _ActualRoot: {fileID: 0}
 --- !u!1 &381003157
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +879,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.8e-43, y: 0, z: 2.3509887e-38, w: -2.306054e+18}
+  m_BoundingSphereOverride: {x: 0, y: 123.24463, z: 7.54e-43, w: 1.28e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1010,7 +990,7 @@ RectTransform:
   - {fileID: 951737161}
   - {fileID: 509837613}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1207,6 +1187,15 @@ MonoBehaviour:
   _choice1CostText: {fileID: 1255446623}
   _choice2Text: {fileID: 1237749707}
   _choice2CostText: {fileID: 1495218690}
+  RecapA: {fileID: 0}
+  ArecapScreenText: {fileID: 0}
+  RecapB: {fileID: 0}
+  _BrecapScreenText: {fileID: 0}
+  DuraText: {fileID: 0}
+  AmmoText: {fileID: 0}
+  RationsText: {fileID: 0}
+  MoneyText: {fileID: 0}
+  MoraleText: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,6 +1617,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255446621}
   m_CullTransparentMesh: 0
+--- !u!1 &1319418200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319418202}
+  - component: {fileID: 1319418201}
+  m_Layer: 0
+  m_Name: FloatingTextController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1319418201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319418200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911ea4f66613b6e4a9d9a3c5910d1e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingTextPrefab: {fileID: 5822302642628226695, guid: 413a2916d1b99924183b9133ca0fe345,
+    type: 3}
+--- !u!4 &1319418202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319418200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 640, y: 640, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1340123593
 GameObject:
   m_ObjectHideFlags: 0
