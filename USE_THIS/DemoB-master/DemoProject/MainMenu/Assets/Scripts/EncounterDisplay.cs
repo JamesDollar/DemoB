@@ -18,22 +18,10 @@ public class EncounterDisplay : MonoBehaviour
     public Text _choice2Text;
     public Text _choice2CostText;
 
-    public Text RecapA;  //a
-    public Text ArecapScreenText;//b
-    public Text RecapB;  //a
-    public Text _BrecapScreenText;//b
-
-    //Resource
-    public Text DuraText;
-    //public Text DisplDuraText;
-    public Text AmmoText;
-    //public Text DispAmmoText;
-    public Text RationsText;
-    //public Text DispRationsText;
-    public Text MoneyText;
-    //public Text DispMoneyText;
-    public Text MoraleText;
-    //public Text DispMoraleText;
+    public Text RecapA;
+    public Text ArecapScreenText;
+    public Text RecapB; 
+    public Text _BrecapScreenText;
 
 
     void OnEnable()
@@ -49,8 +37,8 @@ public class EncounterDisplay : MonoBehaviour
         _choice2Text.text = _encounter.Choice2;
         _choice2CostText.text = _encounter.Choice2Cost;
 
-        RecapA.text = _encounter.RecapA.ToString();//c
-        RecapB.text = _encounter.RecapB.ToString();//c
+        RecapA.text = _encounter.RecapA.ToString();
+        RecapB.text = _encounter.RecapB.ToString();
     }
 
     //sets the displayed encounter to the input encounter

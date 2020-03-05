@@ -32,8 +32,4 @@ public class MainMenuController : MonoBehaviour
         ActiveMission = missionName;
         MissionChanged.Invoke(ActiveMission);
     }
-
-
-
-
 }

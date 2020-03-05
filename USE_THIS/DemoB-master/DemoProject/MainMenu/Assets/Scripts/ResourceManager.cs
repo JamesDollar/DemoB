@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-    [SerializeField] int rations = 10;
-    [SerializeField] int morale = 5;
-    [SerializeField] int money = 20;
-    [SerializeField] int durability = 100;
-    [SerializeField] int ammo = 1;
-    [SerializeField] int maxAmmo = 5;
+    [SerializeField] public int rations = 10;
+    [SerializeField] public int morale = 5;
+    [SerializeField] public int money = 20;
+    [SerializeField] public int durability = 100;
+    [SerializeField] public int ammo = 1;
+    [SerializeField] public int maxAmmo = 5;
 
     [SerializeField] ResourceManagerUI resourceManagerUI;
 
