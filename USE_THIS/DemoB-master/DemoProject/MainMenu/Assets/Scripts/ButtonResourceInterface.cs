@@ -28,11 +28,6 @@ public class ButtonResourceInterface : MonoBehaviour
         FillData();
         CompareResources();
     }
-    void Update()
-    {
-        _encounter = _encounterDisplay.GetComponent<EncounterDisplay>()._encounter;
-        _resourceManager = _resourceManagerContainer.GetComponent<ResourceManager>();
-    }
 
     void CompareResources()
     {
