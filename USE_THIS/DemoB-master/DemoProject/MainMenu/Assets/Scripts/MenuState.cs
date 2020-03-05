@@ -5,10 +5,13 @@ using UnityEngine;
 public enum MenuState
 {
    None = 0,
-  
+    ActualRoot,
    Root,
    ChoiceA,
-   ChoiceB
+   ChoiceB,
+   a,
+   b,
+   c
    
 
 
